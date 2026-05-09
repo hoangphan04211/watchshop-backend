@@ -1,17 +1,4 @@
-*.log
-.DS_Store
-.env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
-/.fleet
-/.idea
-/.nova
-/.phpunit.cache
-/.vscode
-/.zed
-/auth.json
+# Laravel standard ignores
 /node_modules
 /public/build
 /public/hot
@@ -19,6 +6,43 @@
 /storage/*.key
 /storage/pail
 /vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+.env.*
+*.env
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Testing
+.phpunit.result.cache
+.phpunit.cache
+
+# IDE and OS files
+.DS_Store
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+/auth.json
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# PHP and IDE Helpers
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+.php-cs-fixer.cache
+.php_cs.cache
+
+# Sensitive files
+id_rsa
+id_rsa.pub
+ssh-keygen*
+auth.json
